@@ -3,4 +3,5 @@
 After completing all the steps in the project, automatic tests will become available to you. Tests are run on each commit - once all tasks in the Hexlet interface are completed, make a commit, and the tests will run automatically.
 
 The hexlet-check.yml file is responsible for running these tests - do not delete this file, edit it, or rename the repository.
-[![Test Coverage](https://api.codeclimate.com/v1/badges/bf8e8600f8b424860af8/test_coverage)](https://codeclimate.com/github/ohalivka/python-project-lvl1/test_coverage)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/bf8e8600f8b424860af8/maintainability)](https://codeclimate.com/github/ohalivka/python-project-lvl1/maintainability)
