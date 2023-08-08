@@ -22,7 +22,7 @@ def game():
 	print('Answer "yes" if the number is even, otherwise answer "no".')
 
 	# играем с пользователем
-	for x in range(ROUNDS):
+	for r in range(ROUNDS):
 		# генерирум случайное число
 		number = random.randint(START_RANGE, STOP_RANGE)
 
@@ -30,10 +30,10 @@ def game():
 		print(f'Question: {number}')
 		answer = prompt.string('Your answer: ')
 
-		# сверяем с правильным
+		# узнаем правильный ответ
 		result = is_even(number)
 
-		# показываем результат
+		# сверяем ответ пользователя с правильным ответом
 		if answer == result:
 			print('Correct!')
 		else:
