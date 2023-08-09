@@ -11,10 +11,9 @@ STOP_RANGE = 100
 # проверяем число на четность
 def is_even(num):
 	if num % 2 == 0:
-		res = 'yes'
+		return 'yes'
 	else:
-		res = 'no'
-	return res
+		return 'no'
 
 
 def game():

@@ -10,13 +10,11 @@ STOP_RANGE = 100
 
 def calculate_result(number_one, number_two, operator):
 	if operator == '+':
-		result = number_one + number_two
+		return number_one + number_two
 	if operator == '-':
-		result = number_one - number_two
+		return number_one - number_two
 	if operator == '*':
-		result = number_one * number_two
-
-	return result
+		return number_one * number_two
 
 
 def game():
