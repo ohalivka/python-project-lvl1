@@ -1,10 +1,10 @@
 import prompt as prompt
 
-
+# количество раундов
 ROUNDS = 3
 
 
-def game(rules, generate):
+def play_game(game):
 	# приветствие
 	print('Welcome to the Brain Games!')
 
@@ -13,32 +13,26 @@ def game(rules, generate):
 	print(f'Hello, {name}!')
 
 	# рассказываем правила игры
-	print(rules)
+	print(game.RULES)
 
 	# играем в игру
 	for r in range(ROUNDS):
 		# узнаем правильный ответ
-		result, question_options = generate
+		correct_result, question_options = game.start_game()
 
 		# задаем вопрос
 		print(f'Question: {question_options}')
 
 		# узнаем ответ пользователя
-		answer = input('Your answer: ')
+		player_response = input('Your answer: ')
 
 		# сравниваем правильный ответ с ответом игрока и показываем результат
-		if result == answer:
+		if correct_result == player_response:
 			print('Correct!')
 		else:
-			print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'. Let's try again, {name}!")
+			# игрок проиграл
+			print(f"'{player_response}' is wrong answer ;(. Correct answer was '{correct_result}'. Let's try again, {name}!")
 			break
 	else:
+		# игрок выиграл
 		print(f'Congratulations, {name}!')
-
-
-def main():
-	game()
-
-
-if __name__ == '__main__':
-	main()

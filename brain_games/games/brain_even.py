@@ -3,11 +3,7 @@ import random
 
 START_RANGE = 1
 STOP_RANGE = 100
-
-
-# рассказываем правила игроку
-def tell_the_rules():
-	return 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # проверяем число на четность
@@ -18,11 +14,11 @@ def is_even(num):
 		return 'no'
 
 
-def game():
+def start_game():
 	# генерирум случайное число
 	number = random.randint(START_RANGE, STOP_RANGE)
 
 	# узнаем правильный ответ
-	result = is_even(number)
+	correct_answer = is_even(number)
 
-	print (result, number)
+	return correct_answer, number
