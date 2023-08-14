@@ -10,7 +10,7 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 # вычисляем правильный ответ
 def is_prime(number):
-	for n in range(2, int(number)):
+	for n in range(2, int(number) + 1):
 		if number % n == 0:
 			return 'no'
 		if number % n != 0:
