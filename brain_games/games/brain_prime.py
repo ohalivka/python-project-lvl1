@@ -9,6 +9,8 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 # вычисляем правильный ответ
 def is_prime(number):
+    if number == 1 or number == 0:
+        return 'no'
     for n in range(2, int(number)):
         if number % n == 0:
             return 'no'
