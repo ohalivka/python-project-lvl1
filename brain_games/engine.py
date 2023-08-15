@@ -32,7 +32,8 @@ def play_game(game):
         else:
             # игрок проиграл
             print(f"'{player_response}' is wrong answer ;(.")
-            print(f"Correct answer was '{correct_result}'. Let's try again, {name}!")
+            print(f"Correct answer was '{correct_result}'.")
+            print(f"Let's try again, {name}!")
             break
     else:
         # игрок выиграл
