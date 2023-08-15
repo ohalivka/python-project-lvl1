@@ -3,13 +3,13 @@ from brain_games import cli
 
 
 def greet():
-	print('Welcome to the Brain Games!')
-	cli.main()
+    print('Welcome to the Brain Games!')
+    cli.main()
 
 
 def main():
-	greet()
+    greet()
 
 
 if __name__ == '__main__':
-	main()
+    main()
