@@ -1,5 +1,4 @@
 import random
-import prompt
 
 
 SEQUENCE_NUMBERS = 10

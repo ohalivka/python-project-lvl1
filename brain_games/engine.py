@@ -1,4 +1,4 @@
-import prompt as prompt
+import prompt
 
 # количество раундов
 ROUNDS = 3
@@ -31,7 +31,8 @@ def play_game(game):
 			print('Correct!')
 		else:
 			# игрок проиграл
-			print(f"'{player_response}' is wrong answer ;(. Correct answer was '{correct_result}'. Let's try again, {name}!")
+			print(f"'{player_response}' is wrong answer ;(.")
+			print(f"Correct answer was '{correct_result}'. Let's try again, {name}!")
 			break
 	else:
 		# игрок выиграл
