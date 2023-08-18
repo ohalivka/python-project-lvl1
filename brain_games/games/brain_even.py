@@ -11,11 +11,11 @@ def is_even(num):
 
 
 def start_game():
-    number = random.randint(START_RANGE, STOP_RANGE)
+    num = random.randint(START_RANGE, STOP_RANGE)
 
-    if is_even(number):
+    if is_even(num):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    return correct_answer, number
+    return correct_answer, num
