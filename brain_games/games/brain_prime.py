@@ -7,7 +7,6 @@ STOP_RANGE = 100
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-# вычисляем правильный ответ
 def is_prime(number):
     if number == 1 or number == 0:
         return 'no'
@@ -19,10 +18,8 @@ def is_prime(number):
 
 
 def start_game():
-    # генерируем случайное число
     number = random.randint(START_RANGE, STOP_RANGE)
 
-    # вычисляем правильный ответ
     correct_answer = is_prime(number)
 
     return correct_answer, number
