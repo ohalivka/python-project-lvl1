@@ -7,15 +7,15 @@ RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
+    return num % 2 == 0
 
 
 def start_game():
     number = random.randint(START_RANGE, STOP_RANGE)
 
-    correct_answer = is_even(number)
+    if is_even(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
     return correct_answer, number

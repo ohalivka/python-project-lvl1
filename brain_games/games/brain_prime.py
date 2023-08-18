@@ -9,17 +9,20 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     if number == 1 or number == 0:
-        return 'no'
+        return False
     for n in range(2, int(number)):
         if number % n == 0:
-            return 'no'
+            return False
     else:
-        return 'yes'
+        return True
 
 
 def start_game():
     number = random.randint(START_RANGE, STOP_RANGE)
 
-    correct_answer = is_prime(number)
+    if is_prime(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
     return correct_answer, number
